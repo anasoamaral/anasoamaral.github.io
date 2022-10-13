@@ -1,9 +1,107 @@
+<!DOCTYPE html>
 <html>
- 
+<head>
+    <link href="C:\projetos\CSS Cheatsheet\Resources\index.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="C:\projetos\CSS Cheatsheet\Resources\Sacred_lotus_Nelumbo_nucifera.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>Dasmoto's CSS Cheatsheet</title>
+</head>
 <body>
-  <h1>DASMOTO</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+<h1>Dasmoto's CSS Cheatsheet</h1>
+<h3> Display and positioning</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th class="property"> Property</th>
+        <Th>Description</Th>
+        <th>Values</th>
+        <th>Example</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="property"><span class="fundobege">Z-Index</span></td>
+        <td>This property specifies how far back or how far foward an element will apear on a web page when it overlaps with other elements.</td>
+        <td>Integer values, which can be negative or positive values. The highest will be at the foreground and the lowest will be at the back.</td>
+        <td class="code">.element { <br>
+            position: absolute;<br>
+        z-index: -1; <br>
+        }
+        </td>
+    </tr>
+    <tr>
+        <td class="property" rowspan="4"><span class="fundobege">Position</span></td>
+        <td rowspan="4">Specifies options for positioning HTML elements on a web page. Can be set to static, relative, absolute or fixed.</td>
+        <td>Fixed - When the CSS position has a value of fixed, it is set/pinned to a specific spot on a page. The fixed element stays the same regardless of scrolling.</td>
+        <td class="code">div.fixed {<br>
+            position: fixed;<br>
+            bottom: 0;<br>
+            right: 0;<br>
+            width: 300px;<br>
+            border: 3px solid #73AD21;<br>
+          }
+          </td>
+
+    </tr>
+    <tr>
+        <td>Absolute – Enables an element to ignore sibiling elements and instead be positioned relative to its closest parent element that is positioned with relative or absolute.</td>
+        <td class="code">div.absolute {<br>
+            position: absolute;<br>
+            top: 80px;<br>
+            right: 0;<br>
+            width: 200px;<br>
+            height: 100px;<br>
+            border: 3px solid #73AD21;<br>
+          }
+          </td>
+    </tr>
+    <tr>
+        <td>Relative – An element with relative position is positioned relative to where it would have originally been on a web page. The offset properties can be used to determine the actual position of the elemento relative to its original position. Without the offset properties the  declaration will have no effect on the positioning.</td>
+        <td class="code">div.relative {<br>
+            position: relative;<br>
+            left: 30px;<br>
+            border: 3px solid #73AD21;<br>
+          }
+          </td>
+    </tr>
+    <tr>
+        <td>Static - is the default positioning of HTML elements.</td>
+        <td class="code">div.relative {<br>
+            div.static {<br>
+            position: static;<br>
+            border: 3px solid #73AD21;<br>
+          }
+          </td>
+    </tr>
+    <tr>
+        <td class="property"><span class="fundobege">Float</span></td>
+        <td>Determines how far left or how far right an element should float within its parente element. </td>
+        <td>The value left floats an element to the left side of its container and the value right floats na elemento to the right side of its conainer. For the property float, the width of the container must be specified or the element will assume the full width of its containing element.</td>
+        <td class="code">img {<br>
+            float: right;<br>
+          }
+          </td>
+    </tr>
+    <tr>
+        <td class="property"><span class="fundobege">Clear</span></td>
+        <td>Specifies how an elemento should behave when it bumps into another element within the same containing element. The clear is usually used in combination with elements having CSS float property. This determines which sides floating elements are allowed to float.</td>
+        <td>None, left, right, both, inherit</td>
+        <td class="code">div1 {<br>
+            float: left;<br>
+          }<br>
+          <br>
+          div2 {<br>
+            clear: left;<br>
+          }
+          </td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
- 
 </html>
